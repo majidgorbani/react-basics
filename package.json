@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-  "start": "npm run build",
-  "build": "webpack -d && xcopy \"src/index.html\" \"dist/\" /F /Y && webpack-dev-server --content-base src/ --inline",
-  "build:prod": "webpack -p && xcopy \"src/index.html\" \"dist/\" /F /Y"
-},
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && xcopy \"src/index.html\" \"dist/\" /F /Y && webpack-dev-server --content-base src/ --inline",
+    "build:prod": "webpack -p && xcopy \"src/index.html\" \"dist/\" /F /Y"
+  },
   "keywords": [
     "reactjs"
   ],
@@ -15,6 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
