@@ -1,7 +1,8 @@
 
 import React from 'react';
 import {render} from 'react-dom';
-import {boostrap} from 'react-router-bootstrap'
+import {Header} from './components/Header'
+import {Home} from './components/Home'
 
 export class App extends React.Component{
 
@@ -10,14 +11,17 @@ export class App extends React.Component{
             <div className="container">
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <h1> hello!</h1>
+                        <Header />
                     </div>
 
                 </div>
-            </div>
+                <div className="row">
+                    <div className="col-xs-10 col-xs-offset-1">
+                        <Home />
+                    </div>
 
-
-        
+                </div>
+            </div>        
         );
     }
 }
