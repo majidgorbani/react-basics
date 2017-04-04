@@ -1,4 +1,5 @@
 /node_modules
-/dis
+/dist
 /.idea
 /npm-debug.log
+bundle.js
